@@ -15,23 +15,23 @@ provider:
   stage: prod
   region: us-west-2
 
-# Environment variables are made available to our functions with process.env
-environment:
-  tableName: notes
+  # Environment variables are made available to our functions with process.env
+  environment:
+    tableName: notes
 
-# 'iamRoleStatements' defines the permission policy for the Lambda function.
-# In this case Lambda functions are granted with permissions to access DynamoDB.
-iamRoleStatements:
-  - Effect: Allow
-    Action:
-      - dynamodb:DescribeTable
-      - dynamodb:Query
-      - dynamodb:Scan
-      - dynamodb:GetItem
-      - dynamodb:PutItem
-      - dynamodb:UpdateItem
-      - dynamodb:DeleteItem
-    Resource: "arn:aws:dynamodb:us-west-2:671739842407:table/notes"
+  # 'iamRoleStatements' defines the permission policy for the Lambda function.
+  # In this case Lambda functions are granted with permissions to access DynamoDB.
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:us-west-2:671739842407:table/notes"
 
 functions:
   # Defines an HTTP API endpoint that calls the main function in create.js
