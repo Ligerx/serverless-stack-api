@@ -1,5 +1,5 @@
 import uuid from "uuid";
-import AWS, { DocDB } from "aws-sdk";
+import AWS from "aws-sdk";
 
 const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
@@ -50,7 +50,7 @@ export function main(event, context, callback) {
             headers,
             body: JSON.stringify(params.Item)
         };
-        
+
         callback(null, response);
     });
 }
