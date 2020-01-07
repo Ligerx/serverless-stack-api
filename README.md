@@ -35,7 +35,7 @@ $ npm install serverless -g
 Clone this repo and install the NPM packages.
 
 ``` bash
-$ git clone https://github.com/AnomalyInnovations/serverless-stack-demo-api
+$ git clone https://github.com/Ligerx/serverless-stack-api.git
 $ npm install
 ```
 
