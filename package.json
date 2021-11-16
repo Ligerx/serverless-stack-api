@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@hapi/hapi": "^18.4.0",
-    "aws-sdk": "^2.597.0",
+    "aws-sdk": "^2.814.0",
     "bufferutil": "^4.0.1",
     "eslint": "^6.8.0",
     "serverless": "^1.60.5",
